@@ -7,18 +7,27 @@
 </head>
 <body>
 
+  <div class="overlay"></div>
+
   <div class="app">
     <h1>Focus Countdown</h1>
-    <p id="status">Choose a session</p>
+    <p id="status">Set your focus time</p>
+
+    <input type="number" id="customMinutes" placeholder="Enter minutes">
 
     <div class="buttons">
-      <button onclick="startTimer(15)">15 min</button>
-      <button onclick="startTimer(25)">25 min</button>
-      <button onclick="startTimer(45)">45 min</button>
+      <button onclick="startCustom()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
     </div>
 
     <div id="timer">00:00</div>
   </div>
+
+  <footer>
+    © 2026 Krish Solanki |
+    <a href="https://github.com/KrishSolanki10">GitHub</a> |
+    <a href="https://www.linkedin.com">LinkedIn</a>
+  </footer>
 
 <script src="script.js"></script>
 </body>
